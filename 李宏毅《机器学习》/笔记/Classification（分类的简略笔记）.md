@@ -10,11 +10,11 @@
 
 ### softmax 
 
-![softmax](C:\Users\zjy\Desktop\机器学习\李宏毅《机器学习》\image\softmax.PNG)
+![softmax](image\softmax.PNG)
 
 Classification需要对结果进行一次softmax，softmax步骤如下：
 
-![soft-max](C:\Users\zjy\Desktop\机器学习\李宏毅《机器学习》\image\soft-max.PNG)
+![soft-max](image\soft-max.PNG)
 
 这样得到的结果，全都在0-1，且和为1
 
@@ -34,6 +34,6 @@ Classification需要对结果进行一次softmax，softmax步骤如下：
 
 **分类时cross-entroy更适用。**
 
-![cross](C:\Users\zjy\Desktop\机器学习\李宏毅《机器学习》\image\cross.PNG)
+![cross](image\cross.PNG)
 
 如上图所示，MSE的结果在Loss比较大时grandient比较小，更难update到loss小的地方，而cross-entropy的结果更有利于优化（optimization）。
