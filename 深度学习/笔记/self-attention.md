@@ -54,7 +54,7 @@ dot product & additive
 
 因此在这种情况下，我们可以使用一组向量（$e^1,e^2,…，e^i)$存储位置，每个位置对应的向量是不同的，将其作为输入，这样在学习过程中就会考虑位置的因素。（如下图）
 
-![position](C:\Users\zjy\Desktop\机器学习\Deep-Learning-Notes-and-Exercises\深度学习\笔记\image\position.PNG)
+![position](image\position.PNG)
 
 
 
@@ -64,7 +64,7 @@ dot product & additive
 
 **truncated self-attention**
 
-![](C:\Users\zjy\Desktop\机器学习\Deep-Learning-Notes-and-Exercises\深度学习\笔记\image\音频self.PNG)
+![](image\音频self.PNG)
 
 由于音频的数据量是很庞大的，如果全都拿来做self attention，运算量较大，因此我们可以每次只考虑附近几个向量之间的关系，即truncated self-attention，如上图所示。
 
@@ -78,4 +78,4 @@ CNN是self attention的一个特例，之前说CNN中是把一个图片拼成一
 
 在图中节点之间是否有连线实际上说明了节点之间的关系，所以我们可以只考虑之间有连线的节点之间的关系。
 
-![GNN](C:\Users\zjy\Desktop\机器学习\Deep-Learning-Notes-and-Exercises\深度学习\笔记\image\GNN.PNG)
+![GNN](image\GNN.PNG)
