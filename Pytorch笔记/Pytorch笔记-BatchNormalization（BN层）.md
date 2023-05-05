@@ -2,7 +2,7 @@
 
 [官方文档](https://pytorch.org/docs/stable/nn.html#normalization-layers)
 
-![BN层pytorch官方文档定义](C:\Users\zjy\Desktop\机器学习\Deep-Learning-Notes-and-Exercises\Pytorch笔记\img\BN层pytorch官方文档定义.PNG)
+![BN层pytorch官方文档定义](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052115994.PNG)
 
 ### 作用
 

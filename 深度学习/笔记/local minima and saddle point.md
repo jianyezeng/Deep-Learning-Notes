@@ -10,11 +10,11 @@
 
 - saddle point  （梯度为0但并不是局部最低点）
 
-![捕获](image\捕获.JPG)
+![捕获](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113225.JPG)
 
 **如何去辨别是哪一种critical point？**
 
-![捕获](image\捕获.PNG)
+![捕获](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113226.PNG)
 
 当位于临界点时，g（梯度）为0，可以认为
 $$
@@ -22,12 +22,12 @@ L(\theta) = L(\theta^. )+1/2(\theta-\theta^.)^TH(\theta-\theta^.)
 $$
 之后可以根据H判断是哪种临界点；
 
-![捕](image\捕.PNG)
+![捕](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113227.PNG)
 
 当临界点为saddle point时的做法
 
 我们可以根据H去更新$\theta$
 
-![001](image\001.PNG)
+![001](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113228.PNG)
 
 Local minima 在更高级的维度中或许也是 一个saddle point

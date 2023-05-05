@@ -12,7 +12,7 @@
 
 每张图片实际上是一个三维的tensor，三个维度：长、宽、层数（例如：RGB三个channels），将其拉直成一个向量，即可实现影像输入（如下图所示）
 
-![将图片作为输入](image\将图片作为输入.PNG)
+![将图片作为输入](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114518.PNG)
 
 在拉直得到的向量中，每个元素的数值即代表了某一个位置某一种颜色的强度。
 
@@ -32,11 +32,11 @@
 
 一个特征可能同时出现一个图片的不同位置；因为我们可以让负责这一特征的Neuron共享参数
 
-![共享参数](image\共享参数.PNG)
+![共享参数](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114519.PNG)
 
 每个receive field都有一组neuron在负责，不同receive field的对应neuron共享参数，我们将每一个neuron的参数称为一个fitler（卷积核）
 
-![如何共享参数](image\如何共享参数.PNG)
+![如何共享参数](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114520.PNG)
 
 在经过2.1和2.2后的网络层就是**卷积层**，使用卷积层的神经网络即为**卷积神经网络**。
 
@@ -48,11 +48,11 @@
 
 用n个filter对图片的特征进行抓取，每个filter负责一个特征。在一个filter的抓取全部完成后可以得到一个一层的tensor（如下图）。
 
-![filter1](image\filter1.PNG)
+![filter1](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114522.PNG)
 
 而n个filter全部进行一遍后既可得到一个n层的tensor，即为一个feature map。而feature map又可以看出一个拥有n个channels的图片，作为下一层的输入，而下一层的filter也要是一个n个channels的tensor（如下图）。
 
-![多层卷积](image\多层卷积.PNG)
+![多层卷积](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114523.PNG)
 
 如果使用3*3的filter是否可以抓取原图像中更大部分才能体现的特征？答案是可以的，因为使用了多层卷积之后得到的feature map中可以一个元素就能体现出原来很大部分的特征。
 
@@ -60,13 +60,13 @@
 
 将一个比较大图片做一个subsampling（如把偶数的行、奇数列去除），图片变为原来的1/4，但不会影响图片特征的提取
 
-![pool](image\pool.PNG)
+![pool](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114524.PNG)
 
 如何做pooling？
 
 将每个filter经过提取后得到的tensor中元素分成几个小组，从组中选出有代表性的元素留下来，其他元素去除（如下图）
 
-![pooling](image\pooling.PNG)
+![pooling](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114525.PNG)
 
 max pooling：选择最大的元素作为代表。
 
@@ -74,6 +74,6 @@ pooling会对精确度造成损失，因此也**可以不用**。
 
 ### 4. CNN图片识别流程
 
-![THE WHOLE CNN](image\THE WHOLE CNN.PNG)
+![THE WHOLE CNN](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114526.PNG)
 
 经过卷积和池化（pooling，可以不用）后的输出经过flatten可以得到一个向量，再经过全连接层和softmax即可得到最后的输出

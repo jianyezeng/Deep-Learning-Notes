@@ -10,11 +10,11 @@
 
 ### softmax 
 
-![softmax](image\softmax.PNG)
+![softmax](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113972.PNG)
 
 Classification需要对结果进行一次softmax，softmax步骤如下：
 
-![soft-max](image\soft-max.PNG)
+![soft-max](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113973.PNG)
 
 这样得到的结果，全都在0-1，且和为1
 
@@ -34,6 +34,6 @@ Classification需要对结果进行一次softmax，softmax步骤如下：
 
 **分类时cross-entroy更适用。**
 
-![cross](image\cross.PNG)
+![cross](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052113974.PNG)
 
 如上图所示，MSE的结果在Loss比较大时grandient比较小，更难update到loss小的地方，而cross-entropy的结果更有利于优化（optimization）。
