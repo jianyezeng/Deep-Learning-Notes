@@ -44,8 +44,6 @@
 
 **feature map**
 
-![卷积层](笔记\image\卷积层.PNG)
-
 用n个filter对图片的特征进行抓取，每个filter负责一个特征。在一个filter的抓取全部完成后可以得到一个一层的tensor（如下图）。
 
 ![filter1](https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052114522.PNG)
